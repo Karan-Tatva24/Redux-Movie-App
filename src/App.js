@@ -14,9 +14,9 @@ const App = () => {
         <Header />
         <div className="container">
           <Routes>
-            <Route path="/" Component={Home} />
-            <Route path="/movie/:imdbID" Component={MovieDetail} />
-            <Route path="/*" Component={PageNotFound} />
+            <Route path="/" element={<Home />} />
+            <Route path="/movie/:imdbID" element={<MovieDetail />} />
+            <Route path="/*" element={<PageNotFound />} />
           </Routes>
         </div>
         <Footer />
